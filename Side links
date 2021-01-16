@@ -1,0 +1,34 @@
+<head>
+    <title> Covid Resource Hack</title>
+    <!--add link to page here-->
+</head>
+<body>
+    <section id="header">
+        <div class= "home"
+        <img src="images/HackDavislogo.png">
+    </section>
+</body>
+</section>
+<nav id="sideNav"></nav><nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Friends</a></li>
+        <li><a href="#">Tests</a></li>
+    </ul>
+</nav>
+<img src="image/menu.png" id="menuBtn">Home
+<img src="image/menu2.png" id="menuBtn">Location
+<img src="image/menu3.png" id="menuBtn">Friends
+<img src="image/menu4.png" id="menuBtn">Tests
+
+<!--Home page-->
+<section id="Home">
+    <div class="Home-about-text">
+        <h1> Introducing Covid Resource Hack</h1>
+        <p> Welcome to our Covid Resource Hack. This hack was developed to introduce each
+            countries protocals as far as how long to quarentine, being aware of what procedures
+            they have prepared, and keep yourself safe and healthy</p>
+
+    </div>
+</section>
