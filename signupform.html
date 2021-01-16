@@ -1,0 +1,20 @@
+<button onclick="document.getElementById('id1').style.display='block'">Sign Up</button>
+<div id="id1" class="signup">
+    <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close Form">times;</span>
+    <form class="scontent" action="/action_page.php">
+        <div class="contatiner">
+            <h1>Sign Up</h1>
+            <p>To create and account, fill out this form.</p>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="pswrd"><b>Password</b></label>
+            <input type="text" placeholder="Enter Password" name="pswrd" required>
+
+            <label for="pswrdCnfrm"><b>Please Confirm your password</b></label>
+            <input type="text" placeholder="Confirm Password" name="pswrdCnfrm" required>
+        </div>
+    </form>
+</div>
