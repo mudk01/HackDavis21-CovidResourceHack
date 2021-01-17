@@ -1,23 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <h2>We are glad to have you here</h2>
+    <div class="pglogin">
+      <div class="form">
+        <form class="registerfrm">
+          <input type="text" placeholder="username"></input>
+          <input type="text" placeholder="password"></input>
+          <input type="text" placeholder="email"></input>
+          <button>Register</button>
+          <p class="message"> Already have an account?<a href="#">Login</a></p>
+        </form>
 
-<link rel="stylesheet" href="style.css">
-<form action="action_page.php" method="post">
-    <div clas="imgcontainer">
-      <img src="https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" alt="Avatar" clas="avatar">
+        <form class="logfrm">
+          <input type="text" placeholder="Username"></input>
+          <input type="text" placeholder="Password"></input>
+          <button>Login</button>
+          <p class="message">Don't have an account?<a href="#">Register</a></p>
+        </form>
+      </div>
     </div>
-    
-    <div class="container">
-      <label for="username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="username" required>
-      <label for="pswrd"><b>Password</b></label>
-      <input type="text" placeholder="Enter Password" name="pswrd" required>
-  
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember Me
-      </label>
-    </div>
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="pswrd">Forgot<a href="#">password</a></span>
-    </div>
-  </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+    <script>
+      $('.message a').click(function(){
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
+    </script>
+   </div>
+   <div class="v-nav" id="sidebar">
+    <ul class="nav_links">
+      <li><a href="index.html">Home </a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="#">Friends</a></li>
+      <li><a href="#">Tests</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="loginform.html">Login or Sign up</a></li>
+    </ul>
+  </div>
+
+  </body>
+  </html>
