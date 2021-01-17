@@ -9,20 +9,35 @@ form {
   padding:0;
   background-color: #5aa9e6;
 }
+.v-nav {
+  text-align: left;
+
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 10%;
+  text-align: center;
+  font-size: 60px;
+}
 
 li,a{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 25px;
   color:#080808;
   text-decoration: none;
 }
 
-header{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+.Home-abt {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color:#080808;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20%;
+  top: initial;
+
 }
 
 .logo{
@@ -33,8 +48,9 @@ header{
   list-style: none;
 }
 .nav_links li{
-display: inline-block;
-padding: 0px 20px;
+display: list-item;
+padding: 5px 0px;
+margin-top: auto;
 }
 
 .nav_links li a{
