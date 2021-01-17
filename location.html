@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Location</title>
+    </head>
+    <body>
+        <button onClick="getLocation()">Get Location</button>
+        <div id="output"></div>
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js">
+        </script>
+
+        <script>
+        var x = document.getElementById('output');
+        function getLocation() {
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } 
+            else{
+                x.innerHTML = "NotSupported browser";
+            }
+        }
+        function showPosition(position){
+            x.innerHTML = "latitude = "+position.coords.latitude;
+            x.innerHTML += "<br />"
+            x.innerHTML += "Longitude = "+position.coords.longitude
+
+            var locAPI = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&key=AIzaSyCnmngyiA0pBocjq66rzd5aBRmau-RpVYo";
+
+            $.get({
+                url : locAPI,
+                success: function(data){
+                    console.log(data);
+                    x.innerHTML = data.results[0].address_components[4].long_name + ", ";
+                    x.innerHTML += data.results[0].address_components[5].long_name + ", ";
+                    x.innerHTML += data.results[0].address_components[6].long_name ;
+                }
+            })
+        }
+
+        </script>
+    </body>
+</html>
