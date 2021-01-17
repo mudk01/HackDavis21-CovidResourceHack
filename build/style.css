@@ -26,7 +26,15 @@ h2 {
   font-size: 60px;
 }
 
+
 li,a{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color:#080808;
+  text-decoration: none;
+}
+.nav_links {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 25px;
@@ -133,5 +141,60 @@ body {
 .form .registerfrm {
   display: none;
 }
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  padding: 30px 10%;
+  font-size: 60px;
+  text-align: center;
+}
+h4{
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 10%;
+  text-align: center;
+}
+
+#uq {
+  background-color: #8af490; /* Green */
+  border-radius: 12px;
+  color: rgb(199, 199, 199);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 150px; */
+  vertical-align: middle;
+  position: relative;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#uq:hover {
+  background-color: #4CAF50;
+  color: rgb(199, 199, 199);
+}
+
+.wrapper-uq {
+    vertical-align: middle;
+}
+table {
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #d4d4d4;
+}
+ 
+tr:nth-child(even) {
+  background: #d4d4d4;
+}
+ 
+th, td {
+  padding: 10px 30px;
+}
+ 
+th {
+  border-bottom: 1px solid #d4d4d4;
+}  
 
 
