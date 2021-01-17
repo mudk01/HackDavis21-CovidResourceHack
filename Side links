@@ -33,3 +33,19 @@
 
     </div>
 </section>
+
+
+
+</div>
+<img src="image/menu2.png" id="menuBtn">Location
+<h1>My Location</h1>
+<div class="input-info">
+    <input type="text" class="form-control" placeholder="Search Country or City">
+    </div class= "input-group-append">
+    <button type="Submit" class="input-group-text btn">Search</button>
+    </div>
+<section id="Location">
+    <div class="Search-engine">
+        <h2> Know what is going on around the world</h2>
+    </div>
+</section>
