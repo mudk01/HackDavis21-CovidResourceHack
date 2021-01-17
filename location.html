@@ -4,7 +4,16 @@
         <title>Location</title>
     </head>
     <body>
-        <button onClick="getLocation()">Get Location</button>
+        <link rel="stylesheet" href="locationstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <h1>Find Covid information based on your location!</h1>
+        <div style="text-align:center;">
+        <button id="uq" onClick="getLocation()" >Get Location</button>
+        <h2>Be sure to  allow your browser to use your location</h2>
+        </div>
+       <style>
+           
+       </style>
         <div id="output"></div>
         <script src="http://code.jquery.com/jquery-2.2.4.min.js">
         </script>
@@ -25,7 +34,7 @@
             x.innerHTML += "Longitude = "+position.coords.longitude
 
             var locAPI = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&key=AIzaSyCnmngyiA0pBocjq66rzd5aBRmau-RpVYo";
-
+            
             $.get({
                 url : locAPI,
                 success: function(data){
