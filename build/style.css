@@ -19,6 +19,12 @@ h1 {
   text-align: center;
   font-size: 60px;
 }
+h2 {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 10%;
+  text-align: center;
+  font-size: 60px;
+}
 
 li,a{
   font-family: 'Poppins', sans-serif;
@@ -57,69 +63,75 @@ margin-top: auto;
   transition: all 0.03s ease 0s;
   color: #4a4e69
 }
-/* Full-width inputs */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+
+body {
+  background-color: #c9f9ff;
 }
 
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+.pglogin {
+  width: 360px;
+  padding: 0% 0 0;
+  margin: auto;
 }
-
-/* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
   text-align: center;
-  margin: 24px 0 12px 0;
 }
 
-/* Avatar image */
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
+.form input {
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
+.form button {
+  background-color: #8af490; /* Green */
+  border-radius: 12px;
+  color: rgb(199, 199, 199);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 150px; */
+  vertical-align: middle;
+  position: relative;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 16px;
+.form button:hover {
+  background-color: #4CAF50;
+  color: rgb(199, 199, 199);
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
 }
+
+.form button:hover,.form button:active {
+  background: #43a047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: rgb(16, 18, 18);
+  font-size: 17px;
+}
+
+.form .registerfrm {
+  display: none;
+}
+
+
